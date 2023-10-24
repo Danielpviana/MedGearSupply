@@ -1,0 +1,26 @@
+/* contact us */
+#contact{
+    margin-top: 50px;
+}
+#contact h2{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    color:#129EB1
+}
+#contact .form-group{
+    margin-bottom: 10px;
+}
+#message button{
+    width: 150px;
+    height: 38px;
+    background-color: #128290;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    cursor: pointer;
+}
+#message button:hover{
+    background-color: #129EB1;
+}

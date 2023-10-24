@@ -1,0 +1,86 @@
+/** Log in y log up*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.form {
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  text-align: center;
+}
+
+.form h1 {
+  text-align:center;
+  color: #0D626D;
+  font-weight: bolder;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  border-radius:5px;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button-link{
+  text-decoration: none;
+}
+.button {
+  background-color: #128290;
+  color: #fff;
+  text-shadow: 1px 1px 1px black;
+  border:0;
+  outline:none;
+  border-radius:5px;
+  padding:15px 0;
+  font-size:2rem;
+  text-transform:uppercase;
+}
+.button:hover{
+  background-color: #129EB1;
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+.form-content{
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 40px;
+}

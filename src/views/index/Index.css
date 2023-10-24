@@ -1,0 +1,166 @@
+ /*Banner*/
+.banner{
+    width: 100%;
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+
+#bg-image .banner-photo{
+    flex: 1 1 400px;
+}
+
+#bg-image .banner-photo img{
+    width: 100%;
+}
+
+#bg-image .top-left{
+    flex:1 1 400px;
+}
+
+#bg-image {
+    position: relative;
+    text-align: left;
+    color: black;
+    width: 100%;
+    height: auto;
+}
+
+.banner-photo{
+    height: 80%;
+    width: 100%;
+}
+
+.top-left{
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    width: 90%;
+    height: 50%;
+}
+
+.top-left h3{
+    margin-left: 50px;
+    font-size: 60px;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+.top-left h2{
+    margin-left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.changecontent:after{
+    content: ' ';
+    color: #129EB1;
+    text-shadow: 1px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "Monitores";}
+    20%{content: "Camillas";}
+    40%{content: "Desfibriladores";}
+    60%{content: "Electrobisturí";}
+    80%{content: "Ventiladores";}
+    100%{content: "Mucho más";}
+}
+
+.top-left p{
+    margin-left: 50px;
+}
+
+.top-left h5{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.top-left .btn{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 150px;
+    height: 40px;
+    background-color:#128290;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.top-left .btn:hover{
+    background-color: #129EB1;
+    color: white;   
+}
+
+@media screen and (max-width:1100px){
+    .container-fluid .login-logo{
+      right: 1000px;
+    }
+    .top-left h3{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+    .top-left h2{
+        margin-left: 50px;
+        font-size: 30px;
+    }
+    .top-left p{
+        margin-left: 50px;
+    }
+    .top-left .btn{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:940px){
+    .top-left{
+        top: 30px;
+    }
+    .top-left h3{
+        margin-left: 30px;
+        font-size: 30px;
+    }
+    .top-left h2{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .top-left h5{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .top-left p{
+        margin-left: 30px;
+        font-size: 10px;
+    }
+    .top-left .btn{
+        margin-left: 30px;
+        size-adjust: 50%;
+    }
+}
+@media screen and (max-width:760px){
+    .top-left h3{
+        margin-left: 20px;
+    }
+    .top-left h2{
+        margin-left: 20px;
+    }
+    .top-left h5{
+        visibility: hidden;
+    }
+    .top-left p{
+        visibility: hidden;
+    }
+    .top-left .btn{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 320px){
+  #bg-image {
+    height: 200px;
+  }  
+}

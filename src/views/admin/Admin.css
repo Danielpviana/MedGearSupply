@@ -1,0 +1,71 @@
+/*Admin*/
+.switchable-table h1 {
+  margin: 50px 0px;
+  text-align: center;
+  color: #0D626D;
+  text-shadow: 1px 1px 1px black;
+  width: 100%;
+}
+
+.switchable-table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.switchable-table ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switchable-table ul li {
+  padding: 10px 10px;
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  box-shadow: 0px 0px 3px rgb(194 186 186 / 30%);
+  cursor: pointer;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+}
+
+.switchable-table ul li:not(:last-of-type) {
+  /* add border beside last element */
+  border-right: 1px solid white;
+}
+
+.switchable-table ul li:hover {
+  background: #128290;
+  color: #FFF;
+  transition: all 0.3s ease;
+}
+
+#first-dynamic-table{
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px rgb(18 16 16 / 30%);
+  padding: 35px 15px;
+  color: #36494f;
+}
+/*Main Style*/
+.tab-item.active {
+  background: #0D626D;
+  color: white;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}

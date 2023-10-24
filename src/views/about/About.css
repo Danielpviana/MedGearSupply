@@ -1,0 +1,12 @@
+/* about us */
+#about{
+    margin-top: 100px;
+}
+#about h2{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    color: #129EB1
+}
+#about p{
+  text-align: justify;
+}
