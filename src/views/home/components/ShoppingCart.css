@@ -1,0 +1,58 @@
+/* CSS for Cart Tab */
+.carrito-compras {
+  position: fixed;
+  right: 0;
+  width: 380px;
+  top: 75px;
+  height: 75%;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid #128290;
+  z-index: 10;
+  background-color: rgb(18	130	144 / 50%);
+}
+.carrito-compras-titulo {
+  text-align: center;
+  border-bottom: 1px solid #128290;
+  background-color: white;
+}
+.carrito-compras-titulo h2{
+  margin: 0.5rem 0.5rem 0rem 0.5rem;
+  font-weight: bold;
+}
+.item-img {
+  height: 50px;
+}
+.carrito-compras-items {
+  flex-grow: 1; /* Make the items take the available vertical space */
+  overflow-y: auto; /* Add a scrollbar if needed */
+}
+.carrito-compras-items ul{
+  border-bottom: 1px solid #128290;
+}
+.carrito-compras-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  padding: 0.5rem;
+}
+.carrito-compras-total {
+  flex-grow: 1; /* Make the total take available space */
+}
+.carrito-compras-total #total-price{
+  flex-grow: 1; /* Make the total take available space */
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+.carrito-compras-comprar {
+  text-align: right;
+}
+.carrito-compras-comprar button{
+  border-radius: 5px;
+  border-color: #0D626D;
+  background-color: #0D626D;
+  height: 100%;
+  color: #fff;
+  width: 100px;
+}

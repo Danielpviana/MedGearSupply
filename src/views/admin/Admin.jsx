@@ -3,6 +3,29 @@ import { UserNavbar } from '../../components/userNavbar/UserNavbar'
 
 
 export function Admin() {
+    document.addEventListener("DOMContentLoaded", function () {
+        const tableBody = document.querySelector("#inventario .table-body");
+
+        if (localStorage.getItem('products')) {
+
+            let products2 = JSON.parse(localStorage.getItem('products')) || []
+
+            products2.forEach((product) => {
+                const row = document.createElement("tr");
+
+                row.innerHTML = `
+            <th scope="row">${product.id}</th>
+            <td>${product.name}</td>
+            <td>${product.price}</td>
+            <td>${product.amount}</td>
+        `;
+
+                tableBody.appendChild(row);
+            });
+
+        };
+    });
+
     return (
         <>
             <UserNavbar></UserNavbar>
@@ -26,8 +49,32 @@ export function Admin() {
                                 </tr>
                             </thead>
                             <tbody class="table-body">
-                            </tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Monitor 1</td>
+                                    <td>100</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Monitor 2</td>
+                                    <td>150</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Monitor 3</td>
+                                    <td>500</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Monitor 4</td>
+                                    <td>300</td>
+                                    <td>13</td>
+                                </tr>
 
+                            </tbody>
                         </table>
                     </div>
                     <div class="tab-content" id="historial-compras">
@@ -46,21 +93,21 @@ export function Admin() {
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Monitor 1</td>
-                                    <td>100.50</td>
+                                    <td>100</td>
                                     <td>10/10/23</td>
                                     <td>Tarjeta crédito</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>Monitor 2</td>
-                                    <td>150.50</td>
+                                    <td>150</td>
                                     <td>15/10/23</td>
                                     <td>Transferencia</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
                                     <td>Monitor 3</td>
-                                    <td>500.10</td>
+                                    <td>500</td>
                                     <td>08/10/23</td>
                                     <td>Efectivo</td>
                                 </tr>

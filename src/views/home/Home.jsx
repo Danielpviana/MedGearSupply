@@ -3,6 +3,7 @@ import { UserNavbar } from "../../components/userNavbar/UserNavbar";
 import React, { useEffect, useState } from 'react';
 import { Card } from "./components/Card";
 import { ProductTypes } from "../../components/productTypes/ProductTypes";
+import { ShoppingCart } from "./components/ShoppingCart";
 import banner from '../../assests/images/banner.jpg'
 
 export function Home() {
@@ -35,6 +36,7 @@ export function Home() {
     return (
         <>
             <UserNavbar></UserNavbar>
+            <ShoppingCart></ShoppingCart>
             <div className="container--fluid" id="bg-image">
                 <img className="banner-photo" src={banner} alt="banner" />
                 <div className="top-left">
